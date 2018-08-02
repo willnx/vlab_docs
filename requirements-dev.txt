@@ -1,0 +1,16 @@
+sphinx
+sphinx_rtd_theme
+docker-compose
+git+https://github.com/willnx/vlab_auth_service.git@master
+git+https://github.com/willnx/vlab_cee.git@master
+git+https://github.com/willnx/vlab_esrs.git@master
+git+https://github.com/willnx/vlab_onefs.git@master
+git+https://github.com/willnx/vlab_insightiq.git@master
+git+https://github.com/willnx/vlab_jumpbox.git@master
+git+https://github.com/willnx/vlab_inventory.git@master
+git+https://github.com/willnx/vlab_power.git@master
+git+https://github.com/willnx/vlab_power.git@master
+git+https://github.com/willnx/vlab_links.git@master
+git+https://github.com/willnx/vlab_vlan.git@master
+git+https://github.com/willnx/vlab_auth_service.git@master
+git+https://github.com/willnx/vlab_gateway.git@master
