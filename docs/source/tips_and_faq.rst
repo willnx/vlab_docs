@@ -20,7 +20,17 @@ FAQ
 Who/where can I ask questions about vLab?
 =========================================
 
-Check out our Slack channel (#vlab) at https://isilon-support.slack.com
+Check out our Slack channel (#vlab-beta) at https://isilon-support.slack.com/messages/CCQJMMHHR/
+
+
+What's the username/password for ... ?
+======================================
+
+Most components allow users to login as either ``root``, ``admin``, or ``administrator``.
+If you're trying to access the vCenter HTML console, the generic user is ``readonly@vsphere.local``.
+
+The password is probably a lower-case ``a``. Unless it's your Jumpbox; you should
+have changed that password.
 
 
 How to I request a new feature?
