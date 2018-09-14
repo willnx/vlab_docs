@@ -30,8 +30,12 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <TODO>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.0.3-amd64.msi>`.
 
+.. note::
+
+   The command is ``vlab.exe`` in Windows instead of simply ``vlab``, because
+   that OS loves file extensions.
 
 Python
 ======
