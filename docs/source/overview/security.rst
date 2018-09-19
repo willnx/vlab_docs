@@ -11,7 +11,7 @@ Securing the API
 ****************
 
 The vLab server uses `JSON Web Tokens <https://jwt.io>`_ (JWT) to identify *who you are*.
-Inside the JWT is identity information, like your username and group memeberships.
+Inside the JWT is identity information, like your username and/or group memberships.
 So, instead of storing authorization information in the token, authentication information
 is stored. The individual services in vLab are responsible for authorization based
 on the identity stored within the JWT. In production, asymmetric keys are used to
