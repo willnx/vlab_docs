@@ -30,7 +30,7 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.0.10-amd64.msi>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.0.11-amd64.msi>`.
 
 .. note::
 
@@ -50,7 +50,7 @@ the vLab CLI client with ``pip`` is like this::
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Python) <vlab_cli-0.0.10-py3-none-any.whl>`.
+   :download:`vLab CLI client (Python) <vlab_cli-0.0.11-py3-none-any.whl>`.
 
 
 .. _initialize:
