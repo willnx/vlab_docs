@@ -32,6 +32,21 @@ If you're trying to access the vCenter HTML console, the generic user is ``reado
 The password is probably a lower-case ``a``. Unless it's your Jumpbox; you should
 have changed that password.
 
+How do I see available versions of a component?
+===============================================
+
+Components can tell you the version (and syntax) available for deployment
+via like this::
+
+  $ vlab show <component> --images
+
+For example, run the follow command to see what versions of OneFS are available::
+
+  $ vlab show onefs --images
+
+Why ``images`` instead of ``version``? Semantics; who really wants to talk about
+*versions of some software (vLab) that deploys versions of other software?* 
+
 
 How to I request a new feature?
 ===============================
