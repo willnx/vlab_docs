@@ -32,10 +32,18 @@ install the vLab CLI:
 
    :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.0.13-amd64.msi>`.
 
-.. note::
+Install Video
+=============
 
-   The command is ``vlab.exe`` in Windows instead of simply ``vlab``, because
-   that OS loves file extensions.
+This is a short video tutorial on how to install the vLab CLI client in Windows.
+
+.. raw:: html
+
+   <video width="320" height="240" controls>
+     <source src="_static/vLabClientInstall.mp4" type="video/mp4">
+   </video>
+   <p></p>
+
 
 Python
 ======
@@ -77,6 +85,19 @@ have to login to your Jumpbox. You can login to your Jumpbox via either:
 - The default password is simply ``a``, and you should **change it!**
 - The IP to use can be found with the ``vlab info`` command **or** ``vlab show gateway`` command
 
+Video Setting Up and Accessing Lab
+==================================
+
+This video demonstrates how to initialize your lab, and how to access it via
+SSH or RDP.
+
+.. raw:: html
+
+   <video width="320" height="240" controls>
+    <source src="_static/InitAndAccess.mp4" type="video/mp4">
+  </video>
+  <p></p>
+
 .. _use-it:
 
 *******************
@@ -99,13 +120,24 @@ will get to you the right command nearly every time.
 
 In addition, everything is non-plural. Even if this makes the syntax sound a bit
 off, it's worth it in the end. So if you ever find yourself thinking *"is it network or networks,"*
-just assume is *network*. Mixing plural and non-plural words makes it's
-using a CLI harder than it needs to be, and using vLab should be pretty simple.
+just assume it's *network*. Mixing plural and non-plural words makes
+using a CLI harder than it needs to be. The goal of the vLab CLI is that it
+should be pretty simple to use.
 
 .. note::
 
    Remember, different commands take different arguments. Use ``--help`` to check the syntax.
 
+
+Video Using the CLI
+===================
+
+.. raw:: html
+
+   <video width="320" height="240" controls>
+    <source src="_static/vLabCLI.mp4" type="video/mp4">
+  </video>
+  <p></p>
 
 Creating something
 ==================
