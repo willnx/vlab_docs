@@ -18,11 +18,30 @@ All you have to do now is:
 Install the vLab CLI client
 ***************************
 
-The vLab client comes in two varieties: A giant binary for Windows, and a pure Python package.
+The vLab client comes in two varieties: A giant binary for Windows, and a pure
+Python package for Linux users.
 You have to decide which one works for you.
 
 Windows
 =======
+
+This section is for installing the vLab CLI on a Windows 10 machine.
+
+Prerequisites/Dependencies
+--------------------------
+
+The ``vlab connect`` feature requires Putty and WinSCP to be installed on Windows.
+If you do not have those applications installed, please download and install them
+before proceeding.
+
+.. only:: builder_html
+
+   :download:`Putty <putty-64bit-0.70-installer.msi>`
+
+   :download:`WinSCP <WinSCP-5.13.6-Setup.exe>`
+
+vLab CLI MSI
+------------
 
 The giant binary is packaged in an `MSI <https://whatis.techtarget.com/fileformat/MSI-Installer-package-Microsoft-Windows>`_
 file. You should be able to simply download the file from below, then run it to
@@ -30,7 +49,7 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.0.15-amd64.msi>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.2.0-amd64.msi>`.
 
 Install Video
 =============
@@ -45,8 +64,25 @@ This is a short video tutorial on how to install the vLab CLI client in Windows.
    <p></p>
 
 
-Python
+Linux
 ======
+
+This section is for installing the vLab CLI on a Linux machine.
+
+Prerequisites/Dependencies
+--------------------------
+
+You'll need ``ssh`` and ``remmina`` for the ``vlab connect`` feature to work.
+Due to the shear number of Linux flavors, instructions on how to install each
+is listed below:
+
+`SSH Install instructions <https://www.cyberciti.biz/faq/how-to-installing-and-using-ssh-client-server-in-linux/>`_
+
+`Remmina Install instruction <https://remmina.org/how-to-install-remmina/>`_
+
+
+vLab CLI Wheel
+--------------
 
 If you have Python installed on your OS already, you can download the
 `Python wheel <https://pythonwheels.com/>`_ and install it with `Pip <https://pip.pypa.io/en/stable/installing/>`_.
@@ -58,7 +94,7 @@ the vLab CLI client with ``pip`` is like this::
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Python) <vlab_cli-0.0.15-py3-none-any.whl>`.
+   :download:`vLab CLI client (Python) <vlab_cli-0.2.0-py3-none-any.whl>`.
 
 
 .. _initialize:
@@ -75,15 +111,29 @@ Run this command, then go grab some coffee. When you come back, your lab should 
 
 Accessing your lab
 ==================
-Once your lab is created, you'll probably want to access it. To do this, you'll
-have to login to your Jumpbox. You can login to your Jumpbox via either:
+Your lab exists behind a NAT firewall. To access a specific component in your lab,
+simply run::
 
-1) RDP (Just press the windows key, then literally type ``rdp``)
-2) SSH (aka Putty)
+  vlab connect COMPONENT --name NAME
 
-- The username to login as is your CORP username.
-- The default password is simply ``a``, and you should **change it!**
-- The IP to use can be found with the ``vlab info`` command **or** ``vlab show gateway`` command
+to establish a direct connect to that specific machine. For example, to connect
+to node 1 in a OneFS cluster named ``isi01`` the syntax would be::
+
+  vlab connect onefs --name isi01-1
+
+.. note::
+
+   Make sure to include the node number in the name when connecting to a OneFS
+   cluster.
+
+Most of the components in vLab support multiple connection protocols. To connect
+via a different protocol, just define the specific protocol via the ``--protocol``
+argument.
+
+**PROTIP:** Once you've established a connect to one component, you can *hop* to other
+components. For instance, if you connect to a Windows client you can use Putty *on
+that client* to connect to OneFS and test SmartConnect or IPv6, or any other feature
+that ``vlab connect`` isn't able to leverage.
 
 Video Setting Up and Accessing Lab
 ==================================
