@@ -158,7 +158,6 @@ of the currently available API end points. Please let us know if we forget to
 update it!
 
 - ``/api/1/inf/gateway`` - The NAT firewall in your lab
-- ``/api/1/inf/jumpbox`` - What you login to when accessing your lab
 - ``/api/1/inf/esrs`` - The Dell EMC ESRS component
 - ``/api/1/inf/insightiq`` - The Dell EMC InsightIQ component
 - ``/api/1/inf/onefs`` - The Dell EMC OneFS component

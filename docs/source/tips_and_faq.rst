@@ -29,8 +29,7 @@ What's the username/password for ... ?
 Most components allow users to login as either ``root``, ``admin``, or ``administrator``.
 If you're trying to access the vCenter HTML console, the generic user is ``readonly@vsphere.local``.
 
-The password is probably a lower-case ``a``. Unless it's your Jumpbox; you should
-have changed that password.
+The password is probably a lower-case ``a``.
 
 How do I see available versions of a component?
 ===============================================
@@ -45,7 +44,7 @@ For example, run the follow command to see what versions of OneFS are available:
   $ vlab show onefs --images
 
 Why ``images`` instead of ``version``? Semantics; who really wants to talk about
-*versions of some software (vLab) that deploys versions of other software?* 
+*versions of some software (vLab) that deploys versions of other software?*
 
 
 How to I request a new feature?
