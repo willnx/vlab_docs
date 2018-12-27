@@ -20,8 +20,13 @@ FAQ
 Who/where can I ask questions about vLab?
 =========================================
 
-Check out our Slack channel (#vlab-beta) at https://isilon-support.slack.com/messages/CCQJMMHHR/
+Check out our channel on `Microsoft Teams <https://teams.microsoft.com/_#/conversations/vLab?threadId=19:1616cfd350254a1faf2247b947745251@thread.skype&ctx=channel>`_
 
+.. raw:: html
+
+   <p> Or just
+   <a href="mailto:nicholas.willhite@emc.com?Subject=vLab%20Question" target="_top">send an email</a>
+   </p>
 
 What's the username/password for ... ?
 ======================================
