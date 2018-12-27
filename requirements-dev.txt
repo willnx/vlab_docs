@@ -6,7 +6,6 @@ git+https://github.com/willnx/vlab_cee.git@master
 git+https://github.com/willnx/vlab_esrs.git@master
 git+https://github.com/willnx/vlab_onefs.git@master
 git+https://github.com/willnx/vlab_insightiq.git@master
-git+https://github.com/willnx/vlab_jumpbox.git@master
 git+https://github.com/willnx/vlab_inventory.git@master
 git+https://github.com/willnx/vlab_power.git@master
 git+https://github.com/willnx/vlab_power.git@master
