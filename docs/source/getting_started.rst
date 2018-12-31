@@ -49,7 +49,7 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.2.2-amd64.msi>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.2.3-amd64.msi>`.
 
 Install Video
 =============
@@ -94,7 +94,7 @@ the vLab CLI client with ``pip`` is like this::
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Python) <vlab_cli-0.2.2-py3-none-any.whl>`.
+   :download:`vLab CLI client (Python) <vlab_cli-0.2.3-py3-none-any.whl>`.
 
 
 .. _initialize:
