@@ -10,3 +10,5 @@ use within vLab.
     :caption: Components:
 
     onefs/onefs.rst
+    insightiq/insightiq.rst
+    icap/icap.rst
