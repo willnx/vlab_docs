@@ -28,5 +28,6 @@ If you're **new**, then you'll want to checkout the **Getting Started** page fir
 
    getting_started.rst
    tips_and_faq.rst
+   components/base.rst
    overview/how_it_works.rst
    for_developers/base.rst
