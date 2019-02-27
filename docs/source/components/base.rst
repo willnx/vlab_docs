@@ -12,3 +12,4 @@ use within vLab.
     onefs/onefs.rst
     insightiq/insightiq.rst
     icap/icap.rst
+    router/router.rst
