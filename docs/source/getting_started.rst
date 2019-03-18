@@ -48,7 +48,7 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-0.2.12-amd64.msi>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-2019.3.18-amd64.msi>`.
 
 
 Initialize your lab
