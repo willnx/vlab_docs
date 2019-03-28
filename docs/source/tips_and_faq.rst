@@ -32,7 +32,7 @@ What's the username/password for ... ?
 ======================================
 
 Most components allow users to login as either ``root``, ``admin``, or ``administrator``.
-If you're trying to access the vCenter HTML console, the generic user is ``readonly@vsphere.local``.
+If you're trying to access the vCenter HTML console, the generic user is ``readonly@vlab.local``.
 
 The password is probably a lower-case ``a``.
 
