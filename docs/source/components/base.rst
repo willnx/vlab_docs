@@ -13,3 +13,4 @@ use within vLab.
     insightiq/insightiq.rst
     icap/icap.rst
     router/router.rst
+    ecs/ecs.rst
