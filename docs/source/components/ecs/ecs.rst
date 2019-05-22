@@ -15,6 +15,10 @@ by EMC.
 Getting Started
 ===============
 
+Credentials
+-----------
+The default username and password for ECS is ``admin`` and ``ChangeMe``
+
 .. image:: ecs_config.png
    :scale: 50 %
 
