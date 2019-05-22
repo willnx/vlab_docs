@@ -19,6 +19,10 @@ Credentials
 -----------
 The default username and password for ECS is ``admin`` and ``ChangeMe``
 
+
+Configuring
+-----------
+
 .. image:: ecs_config.png
    :scale: 50 %
 
