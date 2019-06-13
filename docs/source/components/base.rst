@@ -15,3 +15,4 @@ use within vLab.
     router/router.rst
     ecs/ecs.rst
     snapshots/snapshots.rst
+    connect/connect.rst
