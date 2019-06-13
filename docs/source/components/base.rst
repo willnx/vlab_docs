@@ -14,3 +14,4 @@ use within vLab.
     icap/icap.rst
     router/router.rst
     ecs/ecs.rst
+    snapshots/snapshots.rst
