@@ -6,7 +6,7 @@ Additional documentation: https://github.com/willnx/vlab_cli/tree/master/vlab_cl
 
 Intro
 =====
-vLab connect is automation built into the vLab client that makes accessing the
+vLab Connect is automation built into the vLab client that makes accessing the
 components in your lab simpler. Because your lab is behind a
 `NAT firewall <https://en.wikipedia.org/wiki/Network_address_translation>`_,
 you cannot simply connect to the IP of a machine within your lab. The vLab
@@ -16,12 +16,12 @@ then establishing a connection for you.
 
 Getting Started
 ===============
-This section goes over how the vLab connect automation works, and what is supported.
+This section goes over how the vLab Connect automation works, and what is supported.
 
 Supported Clients by Protocol
 -----------------------------
 vLab supports establishing a connection via the following protocols.
-Each protocol enumerates the clients that vLab connection supports for that protocol.
+Each protocol enumerates the clients that vLab Connection supports for that protocol.
 
 `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_:
    * `Putty <https://www.chairk.greenend.org.uk/~sgtatham/putty/>`_
@@ -37,7 +37,7 @@ Each protocol enumerates the clients that vLab connection supports for that prot
 `SCP <https://en.wikipedia.org/wiki/Secure_copy>`_
   * `WinSCP <https://winscp.net/eng/index.php>`_
 
-Not all components support all protocols. Part of the vLab connect automation
+Not all components support all protocols. Part of the vLab Connect automation
 manages this aspect for you as well.
 
 
