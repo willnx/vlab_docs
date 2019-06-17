@@ -36,6 +36,25 @@ If you're trying to access the vCenter HTML console, the generic user is ``reado
 
 The password is probably a lower-case ``a`` (or ``ChangeMe`` for ECS).
 
+What IPs/Subnets can I use in vLab?
+===================================
+
+Great question! The default network created is:
+
+* ``192.168.1.0/24`` (i.e. subnet mask of ``255.255.255.0``)
+
+The **Static IP range** is:
+
+* ``192.168.1.2`` to ``192.168.1.149``
+
+The **DHCP IP range** is:
+
+* ``192.168.1.150`` to ``192.168.1.254``
+
+You're free to create additional networks in vLab too! Those networks can be
+whatever you want.
+
+
 How do I see available versions of a component?
 ===============================================
 
