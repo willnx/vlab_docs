@@ -16,3 +16,4 @@ use within vLab.
     ecs/ecs.rst
     snapshots/snapshots.rst
     connect/connect.rst
+    esxi/esxi.rst
