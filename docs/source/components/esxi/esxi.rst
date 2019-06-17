@@ -78,7 +78,7 @@ Once the ISO is select, you'll notice the upload progress in the upper right:
 
 5) Create VM
 ^^^^^^^^^^^^
-After the ISO has completed uploading, left-click on **Virtual Machines** to select
+After the ISO has completed uploading, right-click on **Virtual Machines** to select
 **Create/Register VM**:
 
 .. image:: esxi_create_vm.png
