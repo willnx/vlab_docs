@@ -1,9 +1,13 @@
+.. _vlab-cli:
+
 ###############
 vLab Client CLI
 ###############
 
 This section goes over how the CLI for vLab works. For tips on using the CLI,
 checkout the Getting Started page.
+
+Source code: https://github.com/willnx/vlab_cli
 
 ********
 Overview

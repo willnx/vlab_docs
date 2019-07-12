@@ -1,3 +1,5 @@
+.. _vlab-overview:
+
 #############
 vLab Overview
 #############
@@ -11,6 +13,5 @@ This section of the documentation dives into how different parts of vLab work.
 
    design.rst
    cli.rst
-   api.rst
    networking/networking.rst
    security.rst
