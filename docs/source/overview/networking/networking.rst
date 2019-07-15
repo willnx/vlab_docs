@@ -3,9 +3,14 @@ Networking in vLab
 ##################
 
 This section goes over how networking inside your lab works, and what technology is
-used. This documentation assumes you understand the basics of networking, like the
-ISO 7-Layer model, subnets and routing.
+used. This documentation assumes you understand the basics of computer networking,
+like the
+`ISO 7-Layer model <https://en.wikipedia.org/wiki/OSI_model>`_,
+`subnets <https://en.wikipedia.org/wiki/Subnetwork>`_,
+and
+`routing <https://en.wikipedia.org/wiki/Routing>`_.
 
+.. _network-overview:
 
 ******************
 What it looks like
@@ -19,25 +24,36 @@ TL;DR
 
 User's networks in vLab are segregated, meaning that only you have access to the
 networks owned by you. Even though all users are accessing the same vSphere
-environment, all the networks within a lab are broken out into individual VLANs.
+environment, all the networks within a lab are broken out into individual
+`VLANs <https://en.wikipedia.org/wiki/Virtual_LAN>`_.
 
 The diagram below illustrates two different labs with multiple vLANs:
 
 .. image:: network_diagram.png
 
 In this image, VLANs of the same color belong to the same owner. The default gateway
-(displayed as a wall) setups up a NAT between the public network, and your lab.
+(displayed as a wall) setups up a `NAT <https://en.wikipedia.org/wiki/Network_address_translation>`_
+between the public network, and your lab.
 The public IP of your network is obtained via DHCP. The private IP (aka, the
 default gateway machines in your lab use) is automatically configured to ``192.168.1.1``.
 
 The NAT plus VLAN approach enables you to choose whatever IPs you want within your
-lab's network. There's no chance of IP collision with another lab, and no
-IPv6 nightmares due to legacy infrastructure. However, this requires you to route
-to the default gateway in order to connect to *outside* resources. This also means
-that to have an *outside* resource access your lab, you must configure a port-forwarding
-rule.
+lab's network! There's no chance of IP collision with another lab, and no
+IPv6 nightmares due to legacy infrastructure. But nothing in life is free (even
+if you don't pay with money), and this networking freedom inside a lab comes at the
+cost of routing between resources in and outside of a lab. Routing into a network
+behind a NAT is typically the harder part, and a lot of work has been
+put into vLab to make `port-forwarding <https://en.wikipedia.org/wiki/Port_forwarding>`_
+easy to simplify that (i.e. the :ref:`vlab-ipam` service).
 
-To make networking simpler within your lab, the default gateway also runs a DHCP
+However, this requires you to route
+to the default gateway in order to connect to *outside* resources. This also means
+that to have an *outside* resource access your lab, you must configure
+`port-forwarding <https://en.wikipedia.org/wiki/Port_forwarding>`_
+rule(s).
+
+To make networking simpler within your lab, the default gateway also runs a
+`DHCP <https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol>`_
 server. Machines deployed into your lab will automatically have their network
 configured if they do not require static IP assignment. The default range of IPs
 handed out by the DHCP server is ``192.168.1.150`` to ``192.168.1.254``, and like

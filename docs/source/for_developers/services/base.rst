@@ -1,17 +1,34 @@
-#############
-vLab Services
-#############
-
-This section contains documentation for the internal APIs of the different vLab services
+########
+Services
+########
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Services:
+   :caption: Contents:
 
-   vlab_auth.rst
-   vlab_gateway.rst
-   vlab_inventory.rst
-   vlab_links.rst
-   vlab_power.rst
-   vlab_vlan.rst
+   auth.rst
+   onefs.rst
+   gateway.rst
+   ecs.rst
+   vlan.rst
+   esxi.rst
+   claritynow.rst
+   icap.rst
+   centos.rst
+   winserver.rst
+   windows.rst
+   cee.rst
+   insightiq.rst
+   proxy.rst
+   router.rst
+   esrs.rst
+   inventory.rst
+   power.rst
+   ipam.rst
+   snapshot.rst
+   cli.rst
+   recycler.rst
+   dns.rst
+   ntp.rst
+   links.rst
