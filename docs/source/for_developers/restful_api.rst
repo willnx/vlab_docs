@@ -31,29 +31,37 @@ are async, even if completing the request is possible in a single request.
 
 Here's a (probably out of date) list of the base end points in vLab:
 
+
 Authentication
 --------------
+These end points are owned by the :ref:`auth-service` service
 - /api/1/auth/key
 - /api/1/auth/token
 - /api/2/auth/token
 
-Networking
-----------
+Port Forwarding
+---------------
+These end points are owned by the :ref:`vlab-ipam` service
 - /api/1/ipam/addr
 - /api/1/ipam/portmap
 
 Other
 -----
+Checkout the :ref:`link-service` doc for some context.
+
 - /api/1/link
 
 Infrastructure
 --------------
 All ``inf`` based resources contain a ``task`` subpoint for checking the status
 of an async task.
+Links to their docs are :ref:`inventory`, :ref:`power-service`, and :ref:`snapshot-service`.
 
 - /api/1/inf/inventory
 - /api/1/inf/power
 - /api/1/inf/snapshot
+
+.. _inf-vms:
 
 Virtual Machines
 ----------------
@@ -157,7 +165,7 @@ cURL
 
 Use the public key to decode an auth token
 ------------------------------------------
-This example uses the `pyjwt <https://pyjwt.readthedocs.io/en/latest/>`_ 
+This example uses the `pyjwt <https://pyjwt.readthedocs.io/en/latest/>`_
 library for decoding the JWT.
 
 .. code-block:: python
