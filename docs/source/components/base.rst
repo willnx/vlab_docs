@@ -17,3 +17,4 @@ use within vLab.
     snapshots/snapshots.rst
     connect/connect.rst
     esxi/esxi.rst
+    claritynow/claritynow.rst
