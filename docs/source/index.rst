@@ -31,3 +31,16 @@ If you're **new**, then you'll want to checkout the **Getting Started** page fir
    components/base.rst
    overview/how_it_works.rst
    for_developers/base.rst
+
+
+.. raw:: html
+
+   <p> If you have questions or need any help, reach out via: </p>
+   <ul>
+     <li>
+       <a href="mailto:nicholas.willhite@emc.com?Subject=vLab%20Question" target="_blank">Email</a>
+     </li>
+     <li>
+       <a href="https://dellstorage.slack.com/messages/CN46NC7EX" target="_blank">Slack</a>
+     </li>
+   </ul>
