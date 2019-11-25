@@ -40,6 +40,14 @@ before proceeding.
 
    :download:`WinSCP <WinSCP-5.13.6-Setup.exe>`
 
+Extras
+------
+Installing the VMware Remote Console **is not** required, but it is pretty handy.
+
+.. only:: builder_html
+
+   :download:`VMware VMRC 10.0.4 <VMware-VMRC-10.0.4-11818843.zip>`
+
 vLab MSI
 ========
 
