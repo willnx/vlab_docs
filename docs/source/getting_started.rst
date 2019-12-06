@@ -30,9 +30,9 @@ your lab on the vLab server.
 Prerequisites/Dependencies
 ==========================
 
-The ``vlab connect`` feature requires Putty and WinSCP to be installed on Windows.
-If you do not have those applications installed, please download and install them
-before proceeding.
+The ``vlab connect`` feature requires Putty, WinSCP and the VMware Remote Console
+(VMRC) to be installed on Windows. If you do not have those applications installed,
+please download and install them before proceeding.
 
 .. only:: builder_html
 
@@ -40,13 +40,7 @@ before proceeding.
 
    :download:`WinSCP <WinSCP-5.13.6-Setup.exe>`
 
-Extras
-------
-Installing the VMware Remote Console **is not** required, but it is pretty handy.
-
-.. only:: builder_html
-
-   :download:`VMware VMRC 10.0.4 <VMware-VMRC-10.0.4-11818843.zip>`
+   :download:`VMware VMRC <VMware-VMRC-10.0.4-11818843.zip>`
 
 vLab MSI
 ========
@@ -56,7 +50,7 @@ install the vLab CLI:
 
 .. only:: builder_html
 
-   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-2019.11.25-amd64.msi>`.
+   :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-2019.12.7-amd64.msi>`.
 
 
 Initialize your lab
