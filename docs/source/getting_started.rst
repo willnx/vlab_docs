@@ -40,7 +40,7 @@ please download and install them before proceeding.
 
    :download:`WinSCP <WinSCP-5.13.6-Setup.exe>`
 
-   :download:`VMware VMRC <VMware-VMRC-10.0.4-11818843.zip>`
+   :download:`VMware VMRC <VMware-VMRC-11.0.0-15201582.zip>`
 
 vLab MSI
 ========
