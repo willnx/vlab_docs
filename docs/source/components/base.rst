@@ -18,3 +18,4 @@ use within vLab.
     connect/connect.rst
     esxi/esxi.rst
     claritynow/claritynow.rst
+    dataiq/dataiq.rst
