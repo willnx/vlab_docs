@@ -34,3 +34,16 @@ prompted to set a new password for the ``administrator`` user.
 Username - ``administrator``
 
 Password - No default password
+
+
+Accessing the Web Interface
+---------------------------
+Logging into the web interface for DataIQ in vLab is a bit different. You can't
+use the browser on your computer. Instead, you have to use a browser *inside*
+your lab. To make this easier, vLab installs a GUI and an RDP server on the
+host running DataIQ. When you run ``vlab connect dataiq --name mydataiq`` an
+RDP session is made. So just pop open a browser in that RDP session and enter
+the IP of your DataIQ machine.
+
+ProTip - If you use get an error about an invalid parameter while logging into
+DataIQ, checkout `KB 542477 <https://support.emc.com/kb/542477>`_.
