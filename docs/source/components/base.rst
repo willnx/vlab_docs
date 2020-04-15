@@ -19,3 +19,4 @@ use within vLab.
     esxi/esxi.rst
     claritynow/claritynow.rst
     dataiq/dataiq.rst
+    dns/dns.rst
