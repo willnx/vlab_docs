@@ -20,3 +20,4 @@ use within vLab.
     claritynow/claritynow.rst
     dataiq/dataiq.rst
     dns/dns.rst
+    esrs/esrs.rst
