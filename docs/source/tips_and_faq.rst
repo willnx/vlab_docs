@@ -80,3 +80,15 @@ When you file an issue, please include:
 2) What command you ran
 3) What the output was
 4) What you expected to happen
+
+
+How do I restart my gateway?
+============================
+The command to restart your gateway is ``vlab power restart --name defaultGateway``.
+
+Why do users restart their gateway? It might work around the issue causing the following
+errors:
+(*your error might be slightly different, especially when a FQDN is part of the error message*)
+
+- ``Error: unable to find host user.vlab.local for /api/1/ipam/portmap``
+- ``Error: service unavailable``
