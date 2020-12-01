@@ -9,15 +9,16 @@ use within vLab.
     :maxdepth: 1
     :caption: Components:
 
-    onefs/onefs.rst
-    insightiq/insightiq.rst
-    icap/icap.rst
-    router/router.rst
-    ecs/ecs.rst
-    snapshots/snapshots.rst
-    connect/connect.rst
-    esxi/esxi.rst
     claritynow/claritynow.rst
+    connect/connect.rst
     dataiq/dataiq.rst
+    deployment/deployment.rst
     dns/dns.rst
+    ecs/ecs.rst
     esrs/esrs.rst
+    esxi/esxi.rst
+    icap/icap.rst
+    insightiq/insightiq.rst
+    onefs/onefs.rst
+    router/router.rst
+    snapshots/snapshots.rst
