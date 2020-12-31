@@ -9,6 +9,7 @@ use within vLab.
     :maxdepth: 1
     :caption: Components:
 
+    avamar/avamar.rst
     claritynow/claritynow.rst
     connect/connect.rst
     dataiq/dataiq.rst
