@@ -15,10 +15,16 @@ Getting Started
 Credentials
 -----------
 There is no default password for the WebUI of Avamar. Only the administrative interfaces
-have a defaul password.
+have a default password until you configure the server.
 
 **SSH & MGMT** - ``root`` and ``changeme``
 **WebUI** - ``root`` and there is not default password.
+
+.. warning::
+
+   Some parts of the Avamar web interface only works from inside your vLab network.
+   To work around this bug in Avamar, connect to the web interface via a machine
+   from inside your lab.
 
 Configuring
 -----------
