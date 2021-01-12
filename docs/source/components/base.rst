@@ -10,6 +10,7 @@ use within vLab.
     :caption: Components:
 
     avamar/avamar.rst
+    avamar_ndmp/avamar_ndmp.rst
     claritynow/claritynow.rst
     connect/connect.rst
     dataiq/dataiq.rst

@@ -23,8 +23,17 @@ What's the username/password for ... ?
 Most components allow users to login as either ``root``, ``admin``, or ``administrator``.
 If you're trying to access the vCenter HTML console, the generic user is ``readonly@vlab.local``.
 
-The password is probably a lower-case ``a`` (or ``ChangeMe`` for ECS). Avamar
-only has a default password for SSH and the MGMT interface, which is ``changeme``.
+The password is probably a lower-case ``a`` (or ``ChangeMe`` for ECS).
+
+Avamar
+------
+There are two different components for Avamar: the server and the NDMP accelerator.
+The server only has a default password for *initial configuration*. Part of the
+configuration process for the Avamar server is setting a new password. The NDMP
+accelerator does not force you to change the default password.
+
+- ``root`` and ``changeme``
+
 
 What IPs/Subnets can I use in vLab?
 ===================================

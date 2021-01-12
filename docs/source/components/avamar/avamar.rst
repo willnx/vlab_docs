@@ -1,13 +1,17 @@
-######
-Avamar
-######
+.. _avamar-server:
+
+#############
+Avamar Server
+#############
 
 Additional info: https://www.dell.com/support/home/en-us/product-support/product/avamar-virtual-edition/overview
 
 Intro
 =====
 Avamar is data protection software sold by Dell EMC using the `NDMP <https://en.wikipedia.org/wiki/NDMP>`_
-protocol.
+protocol. To work with OneFS, you must deploy both the Avamar Server and the
+Avamar NDMP accelerator. This document covers the Avamar Server. For the NDMP
+accelerator, checkout :ref:`avamar-ndmp`.
 
 Getting Started
 ===============
@@ -34,13 +38,13 @@ to Avamar.
 
 Creating an Avamar server
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-The only required values to create an Avamar server is the version you want, and
-an IPv4 address to configure the server to use. Here's an example of deploying
-version ``19.2.0.155b`` and using IP ``192.168.1.32``:
+The only required values to create an Avamar server is the name for the new machine,
+and an IPv4 address to configure the server to use. Here's an example of deploying
+a new Avamar server, configured to use IP ``192.168.1.32``:
 
 .. code-block:: shell
 
-   $ vlab create avamar --name AVE --image 19.2.0.155b --static-ip 192.168.1.32
+   $ vlab create avamar --name AVE --static-ip 192.168.1.32
 
 Connecting to the management interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,3 +80,24 @@ The last part is to set the timezone, so skip to the ``Server Settings`` section
 That's it! Just click "go" button (the button is not literally labeled "go") to start
 the installation process. Now take a coffee break. It'll take some time for the installation
 to complete.
+
+
+.. _avamar-issues:
+
+Known Issues
+============
+The OVAs shipped by Avamar are not perfect. Here's a list of known issues with by version:
+
+
+19.3.0.149
+----------
+The Avamar NDMP accelerator is missing the AVP sofware package. You can obtain
+a copy copy here: https://www.dell.com/support/home/en-us/product-support/product/avamar/drivers
+Then upload the file to the system under ``/data01/avamar/repo/packages``.
+
+
+19.4.0.116
+----------
+The Avamar Server is missing is missing the AVP sofware package. You can obtain
+a copy copy here: https://www.dell.com/support/home/en-us/product-support/product/avamar/drivers
+Then upload the file to the system under ``/data01/avamar/repo/packages``.
