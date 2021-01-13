@@ -58,8 +58,37 @@ name of your server:
 
 Install Avamar software
 ^^^^^^^^^^^^^^^^^^^^^^^
-That's right! You have to install the software after deploying the machine. Fun, right?
-After you login to the management interface, click on the ``Install`` button:
+That's right! You have to install the software after deploying the machine. Before
+you can do that, you need to finalize the network configuration via SSH. To connect via SSH, run the following command, where ``<name>``
+is replaced with the literal name of your machine:
+
+.. code-block:: shell
+
+   $ vlab connect avamar --name <name>
+
+After logging in, press ``5`` to ``Apply changes and exit``:
+
+.. image:: ssh_1_apply_and_save.png
+
+Press enter at the next couple of prompts until you reach the ``Apply all changes and exit``
+prompt. Then respond with ``Y`` (capitalized) and press enter:
+
+.. image:: ssh_2_yes.png
+
+After a few minutes, you'll be given a root shell. At this point, you can exit
+the SSH interface.
+
+.. image:: ssh_3_root_prompt.png
+
+Now you need to connect to the management interface. Run the following command,
+replacing ``<name>`` with the literal name of your Avamar NDMP accelerator:
+
+.. code-block:: shell
+
+   $ vlab connect avamar --name <name> --protocol mgmt
+
+After you've connected and logged into the management interface, click in the ``Install``
+button to the right of the screen:
 
 .. image:: mgmt_install.png
 
