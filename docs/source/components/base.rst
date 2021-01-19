@@ -13,6 +13,7 @@ use within vLab.
     avamar_ndmp/avamar_ndmp.rst
     claritynow/claritynow.rst
     connect/connect.rst
+    data_domain/data_domain.rst
     dataiq/dataiq.rst
     deployment/deployment.rst
     dns/dns.rst
