@@ -26,6 +26,7 @@ Each protocol enumerates the clients that vLab Connection supports for that prot
 `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_:
    * `Putty <https://www.chairk.greenend.org.uk/~sgtatham/putty/>`_
    * `SecureCRT <https://www.vandyke.com/products/securecrt/>`_
+   * `Windows Terminal <https://docs.microsoft.com/en-us/windows/terminal/>`_
 
 `HTTPS <https://en.wikipedia.org/wiki/HTTPS>`_
    * `Chrome <https://www.google.com/chrome/>`_
@@ -36,6 +37,7 @@ Each protocol enumerates the clients that vLab Connection supports for that prot
 
 `SCP <https://en.wikipedia.org/wiki/Secure_copy>`_
   * `WinSCP <https://winscp.net/eng/index.php>`_
+  * `FileZilla <https://filezilla-project.org/>`_ (via SFTP, not SCP. Not all components in vLab support SFTP.)
 
 Not all components support all protocols. Part of the vLab Connect automation
 manages this aspect for you as well.
