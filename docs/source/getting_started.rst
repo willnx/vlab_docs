@@ -53,6 +53,8 @@ install the vLab CLI:
    :download:`vLab CLI client (Windows 10 MSI) <vlab-cli-2021.1.28-amd64.msi>`.
 
 
+.. _init_lab:
+
 Initialize your lab
 ===================
 

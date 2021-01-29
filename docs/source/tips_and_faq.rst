@@ -122,3 +122,40 @@ You can work around this easily! Just refresh your token:
 .. code-block:: shell
 
    vlab token --refresh
+
+
+Tab Completion
+==============
+The ``2021.1.28`` (year.month.day) release of the vLab CLI added support for
+`tab completion <https://en.wikipedia.org/wiki/Command-line_completion>`_. Only
+the following shells have support for this feature:
+
+- `PowerShell <https://docs.microsoft.com/en-us/powershell/>`_
+- `Bash <https://www.gnu.org/software/bash/>`_
+- `Zsh <https://www.zsh.org/>`_
+- `fish <https://fishshell.com/>`_
+
+This means if you're using something like `Windows CMD <https://en.wikipedia.org/wiki/Cmd.exe>`_,
+tab completion wont work. To be clear, it's because you're using a terrible shell
+that doesn't support tab completion, not a lack of functionality in the vLab CLI.
+
+Setting up (existing users)
+---------------------------
+If you've been using vLab since before the ``2021.1.18`` release, or you got an
+old copy of the CLI from a colleague instead of downloading the latest and greatest
+right from this site, run the following command:
+
+.. code-block:: shell
+
+   $ vlab init --only-tab-completion
+
+.. note::
+
+   If you're **not** using PowerShell, you'll also want to use the ``--tab-completion-shell``
+   argument to configure your specific shell.
+
+Setting up (new users)
+----------------------
+Just walk through the :ref:`init_lab` steps. Configuring tab completion is done
+automatically for you. At most, checkout that giant **Note** in the section just
+above this one.
