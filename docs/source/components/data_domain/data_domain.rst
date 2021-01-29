@@ -25,7 +25,7 @@ Configuring
 This section goes over deploying a Data Domain server, and some minimal steps
 to configure the system for use.
 
-.. notice::
+.. note::
 
    The web interface can take 10 minutes to become available after initial deployment.
    If you get a connection error upon connecting to the web interface upon first
