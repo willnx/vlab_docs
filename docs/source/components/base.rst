@@ -22,6 +22,8 @@ use within vLab.
     esxi/esxi.rst
     icap/icap.rst
     insightiq/insightiq.rst
+    kemp/kemp.rst
     onefs/onefs.rst
     router/router.rst
     snapshots/snapshots.rst
+    superna/superna.rst
