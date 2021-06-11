@@ -18,10 +18,12 @@ Getting Started
 ===============
 This section goes over how the vLab Connect automation works, and what is supported.
 
+
 Supported Clients by Protocol
 -----------------------------
 vLab supports establishing a connection via the following protocols.
 Each protocol enumerates the clients that vLab Connection supports for that protocol.
+
 
 `SSH <https://en.wikipedia.org/wiki/Secure_Shell>`_:
    * `Putty <https://www.chairk.greenend.org.uk/~sgtatham/putty/>`_
@@ -38,6 +40,9 @@ Each protocol enumerates the clients that vLab Connection supports for that prot
 `SCP <https://en.wikipedia.org/wiki/Secure_copy>`_
   * `WinSCP <https://winscp.net/eng/index.php>`_
   * `FileZilla <https://filezilla-project.org/>`_ (via SFTP, not SCP. Not all components in vLab support SFTP.)
+
+`Console <https://en.wikipedia.org/wiki/System_console>`_
+  * `VMRC <https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=VMRC1200&productId=974>`_
 
 Not all components support all protocols. Part of the vLab Connect automation
 manages this aspect for you as well.
@@ -104,3 +109,44 @@ to generate the syntax needed to launch the given client application via Python'
 `subprocess <https://docs.python.org/3/library/subprocess.html>`_ library.
 
 That's it! That's all there really is to how the ``vlab connect`` command works.
+
+
+Examples
+--------
+Using vLab Connect is very easy. The syntax across componets is consistent, so
+replacing ``onefs`` with ``insightiq`` will typically be a valid command that
+does what you want.
+
+
+.. _connect_ssh:
+
+SSH
+^^^
+Here's an example connecting via SSH:
+
+.. code-block:: shell
+
+   $ vlab connect onefs --name isi01-1 --protocol ssh
+
+.. _connect_https:
+
+HTTPS (aka WebUI)
+^^^^^^^^^^^^^^^^^
+Connecting to the WebUI for Avamar is really similar:
+
+.. code-block:: shell
+
+   $ vlab connect avamar --name myAvmarMachine --protocol https
+
+
+.. _connect_console:
+
+VM Console
+^^^^^^^^^^
+Connecting to the VM console is really handy for setting up new machines, or fixing
+bad network configurations of a machine. The console of a machine is available as
+long as the VM is powered on, even if you've really broken the VM itself:
+
+.. code-block:: shell
+
+  $ vlab connect insightiq --name MyIIQ --protocol console

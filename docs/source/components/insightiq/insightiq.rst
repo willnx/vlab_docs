@@ -26,6 +26,8 @@ your lab.
 Credentials
 -----------
 The main user in InsightIQ is ``administrator``.
+There is no default password for ``administrator``. You **must** connect to the :ref:`connect_console`
+of the machine and configure a password.
 
 The InsightIQ application collects data from OneFS via the ``insightiq`` user
 on the monitored cluster.
